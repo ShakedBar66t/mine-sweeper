@@ -1,0 +1,12 @@
+*{
+    background-color: #808080;
+}
+
+td {
+    border: solid 5px black;
+    background-color: #808080;;
+}
+
+table{
+    border: solid 5px black
+}
