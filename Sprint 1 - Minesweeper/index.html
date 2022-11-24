@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 1 - Minesweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+    <h1>Minesweeper game</h1>
+</head>
+<body onload ="onInit()">
+    <div class="container">
+
+    
+    <div class="timer"></div>
+    <div class="buttons">
+        <button onclick="setDifficulty(1)">beginner</button>
+        <button onclick="setDifficulty(2)">lo beginner</button>
+        <button onclick="setDifficulty(3)">sababa kaze</button>
+
+    </div>
+    <div class="life-container">Life : <span class="life-counter"></span></div>
+
+    <div class="game-container">
+        
+        <table>
+            <tbody oncontextmenu="return false;"class="board"></tbody>
+        </table>
+    </div>
+</div>
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
