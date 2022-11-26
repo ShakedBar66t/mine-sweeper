@@ -259,7 +259,7 @@ function onWin() {
     if (!gGame.isOn) return
     gGame.isOn = false
     stopTimer()
-    alert('ya misken')
+    alert('WINNER')
     renderSmiley(SMILEY_WIN)
 }
 
