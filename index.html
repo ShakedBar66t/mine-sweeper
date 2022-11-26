@@ -9,13 +9,37 @@
     <h1>Minesweeper game</h1>
 </head>
 <body onload ="onInit()">
+    <div class="container">
+
+    
+    <div class="timer"></div>
+    <div class="buttons">
+        <button onclick="setDifficulty(1)">beginner</button>
+        <button onclick="setDifficulty(2)">lo beginner</button>
+        <button onclick="setDifficulty(3)">sababa kaze</button>
+
+    </div>
+    <div class="life-container">Life : <span class="life-counter"></span></div>
+
+    <div >
+        <div class="hints-container">
+            <div class="hints"></div>
+        </div>
+    </div>
+        <div class="flex column smiley-container">
+            <h3 class="smiley" onclick="onReset()"></h3>
+        </div>
+        <div class="flex column timer-container">
+            <h3 class="timer"></h3>
+        </div>
 
     <div class="game-container">
+        
         <table>
-            <tbody></tbody>
+            <tbody oncontextmenu="return false;"class="board"></tbody>
         </table>
     </div>
-
+</div>
 
 
     <script src="js/utils.js"></script>
